@@ -46,6 +46,6 @@ with open("/model/model.pickle", mode = "rb") as fp:
     estimator = pickle.load(fp)
 out = estimator.predict(preprocessed)
 
-out[[userid in absent_userids for userid in userids]] = 50.0
+out[[userid in absent_userids for userid in userids]] = 75.0
 
 np.savetxt("/data/result/out.csv", out, fmt = "%f")
