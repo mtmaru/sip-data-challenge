@@ -1,4 +1,4 @@
-# SIP Data Challenge n-th Solution
+# SIP Data Challenge 1st Place Solution
 
 ## コンテストの概要
 
