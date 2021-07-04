@@ -115,6 +115,10 @@ else:
     importances = pd.read_csv("/model/importances.csv")
     print("done.")
 
+with open("/model/data.pickle", mode = "wb") as fp:
+    data = (preprocessed_05w, preprocessed_10w, preprocessed_15w, quizscore, importances)
+    pickle.dump(data, fp)
+
 print("\n======== Training ========")
 estimator = train(preprocessed_05w, preprocessed_10w, preprocessed_15w, quizscore, importances)
 with open("/model/model.pickle", mode = "wb") as fp:
