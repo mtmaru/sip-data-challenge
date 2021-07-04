@@ -142,3 +142,9 @@ docker run -v ${PWD}/data:/data -v ${PWD}/model:/model sipdatachallenge bash /ap
 ```
 docker run -v ${PWD}/data:/data -v ${PWD}/model:/model sipdatachallenge bash /app/evaluate.sh
 ```
+
+### SHAP値の確認
+
+```
+docker run -v ${PWD}/data:/data -v ${PWD}/model:/model -p 8888:8888 -it sipdatachallenge jupyter notebook --allow-root --ip=* --no-browser
+```

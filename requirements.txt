@@ -1,3 +1,6 @@
 pandas
 scikit-learn
 lightgbm
+shap
+jupyterlab
+matplotlib
