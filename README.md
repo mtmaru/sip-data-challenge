@@ -109,6 +109,12 @@ LightGBM
 4. テストデータの総合成績を予測し、RMSEを求める。
 5. 1-4を10回繰り返し、RMSEの平均を求める。
 
+### 参考にした解法
+
+* [2019 Data Science Bow 1st Place Solution - Kaggle](https://www.kaggle.com/c/data-science-bowl-2019/discussion/127469)
+
+## 分析結果
+
 ### RMSEの推移
 
 * 公式のサンプルコードのモデルをSVMからLightGVMに置き換え：(?) → 約16
@@ -119,9 +125,12 @@ LightGBM
 * 操作時間や滞在時間を追加：特に大きな変化なし
 * Null importanceによる特徴選択を追加：約10 → 約9
 
-### 参考にした解法
+### モデルの解釈
 
-* [2019 Data Science Bow 1st Place Solution - Kaggle](https://www.kaggle.com/c/data-science-bowl-2019/discussion/127469)
+[第35回教育機関DXシンポ](https://www.nii.ac.jp/event/other/decs/#edx35)を参照。
+
+* 映像：https://youtu.be/e1agQWSLILw
+* 資料：https://www.nii.ac.jp/event/upload/20210625-10_Maruyama.pdf
 
 ## 実行方法
 
